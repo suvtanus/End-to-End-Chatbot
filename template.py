@@ -13,7 +13,8 @@ list_of_files = [
     "setup.py",
     "app.py",
     "research/trials.ipynb",
-   " test.py",
+   "test.py",
+   "store_index.py"
    "requirements.txt"
 ]
 
@@ -34,4 +35,4 @@ for filepath in list_of_files:
 
 
     else:
-        logging.info(f"{filename} is already exists")
+        logging.info(f"{filename} already exists")

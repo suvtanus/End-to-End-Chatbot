@@ -12,11 +12,11 @@ Project repo: https://github.com/
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-python3.12 -m venv medibot 
+python3.12 -m venv medibot2 
 ```
 
 ```bash
-.\venv\Scripts\Activate
+.\medibot2\Scripts\Activate
 ```
 
 ### STEP 02- install the requirements
