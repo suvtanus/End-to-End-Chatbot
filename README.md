@@ -103,6 +103,7 @@ open up localhost:
 	
 ## 3. Create ECR repo to store/save docker image
     - Save the URI: 886436955382.dkr.ecr.ap-southeast-2.amazonaws.com/medicalchatbot
+## text for pushing to github
 
 
 	
