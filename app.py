@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 from src.helper import download_hugging_face_embeddings
-from langchain_pinecone import PineconeVectorStore
+# from langchain_pinecone import PineconeVectorStore # Depreciated libraries
+from langchain_pinecone.vectorstores import Pinecone
 from langchain_openai import OpenAI
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -25,7 +26,8 @@ embeddings = download_hugging_face_embeddings()
 index_name = "medicalbot"
 
 # Embed each chunk and upsert the embeddings into your Pinecone index.
-docsearch = PineconeVectorStore.from_existing_index(
+# docsearch = PineconeVectorStore.from_existing_index(
+docsearch = Pinecone.from_existing_index( # Updated with latest function
     index_name=index_name,
     embedding=embeddings
 )
